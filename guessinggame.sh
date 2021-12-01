@@ -5,14 +5,14 @@ function guess {
 		read guess
 		if [[ $guess -gt $num_files ]]
 		then
-                        sleep 1
+            sleep 1
 			echo "You guessed too high. Try again"
 		elif [[ $guess -lt $num_files ]]
 		then
-                        sleep 1
+            sleep 1
 			echo "You guessed too low. Try again"
 		else
-                        sleep 1
+            sleep 1
 			echo "Congratulations! There are indeed $guess files in this directory"
 		break
 		fi
